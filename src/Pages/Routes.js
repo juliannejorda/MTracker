@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Router, Switch, Route } from "react-router-dom";
+import { Router, Switch, Route, HashRouter } from "react-router-dom";
 
 // import About from "./About/About";
 // import Contact from "./Contact/Contact";
@@ -15,7 +15,7 @@ import Navigation from "./Navbar";
 export default class Routes extends Component {
   render() {
     return (
-      <Router history={history}>
+      <HashRouter history={history}>
         <Navigation />
         <Switch>
           <Route path="/" exact component={Intro} />
@@ -28,7 +28,7 @@ export default class Routes extends Component {
           {/* <Route path="/Contact" component={Contact} />
           <Route path="/Products" component={Products} /> */}
         </Switch>
-      </Router>
+      </HashRouter>
     );
   }
 }
