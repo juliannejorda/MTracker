@@ -22,7 +22,7 @@ const MangaList = () => {
   ) : (
     <div className="noBooks">
       <h3>Add to your reading list here:</h3>
-      <Button href="/Info">Click to search a manga</Button>
+      <Button href="/#/Info">Click to search a manga</Button>
     </div>
   );
 };
