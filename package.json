@@ -2,6 +2,7 @@
   "name": "manhwa",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://juliannejorda.github.io/MTracker/",
   "dependencies": {
     "@apollo/client": "^3.3.10",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
@@ -16,6 +17,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "formik": "^2.2.6",
+    "gh-pages": "^3.1.0",
     "graphql": "^15.5.0",
     "history": "^5.0.0",
     "node-sass": "^5.0.0",
@@ -39,7 +41,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
