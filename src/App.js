@@ -11,6 +11,14 @@ import "./App.css";
 // import MangaList from "./Pages/MangaList";
 import Navigation from "./Pages/Navbar";
 import Routes from "./Pages/Routes";
+import {
+  Router,
+  Switch,
+  Route,
+  HashRouter,
+  BrowserRouter,
+} from "react-router-dom";
+import history from "./Pages/history";
 
 function App() {
   // const client = new ApolloClient({
@@ -28,7 +36,9 @@ function App() {
           <NewMangaForm />
         </ApolloProvider>
       </MangaContextProvider> */}{" "}
-      <Routes />
+      <Router history={history}>
+        <Routes />
+      </Router>
     </div>
   );
 }

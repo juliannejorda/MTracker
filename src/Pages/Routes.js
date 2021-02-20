@@ -21,7 +21,7 @@ import Navigation from "./Navbar";
 export default class Routes extends Component {
   render() {
     return (
-      <BrowserRouter history={history}>
+      <>
         <Navigation />
         <Switch>
           <Route path="/" exact component={Intro} />
@@ -34,7 +34,7 @@ export default class Routes extends Component {
           {/* <Route path="/Contact" component={Contact} />
           <Route path="/Products" component={Products} /> */}
         </Switch>
-      </BrowserRouter>
+      </>
     );
   }
 }
