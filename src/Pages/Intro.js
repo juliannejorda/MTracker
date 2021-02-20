@@ -38,7 +38,7 @@ function Intro() {
         Click button to search a manga
       </Button> */}
         {/* <Nav.Link href="/Info">Click to search a manga</Nav.Link> */}
-        <Button size="lg" href="/Info">
+        <Button size="lg" href="#/Info">
           Click To Search:
         </Button>
       </div>

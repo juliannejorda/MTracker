@@ -30,9 +30,9 @@ import history from "./Pages/history";
 ReactDOM.render(
   <React.StrictMode>
     {/* <Router> */}
-    <Router history={history}>
+    <HashRouter history={history}>
       <App />
-    </Router>
+    </HashRouter>
     {/* </Router> */}
   </React.StrictMode>,
   document.getElementById("root")

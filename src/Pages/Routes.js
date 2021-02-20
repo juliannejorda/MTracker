@@ -23,11 +23,12 @@ export default class Routes extends Component {
   render() {
     return (
       <>
+        {/* <HashRouter> */}
         <Switch>
-          {/* <Route path="/" exact component={Intro} /> */}
-          <Route path="/" exact>
+          <Route path="/" exact component={Intro} />
+          {/* <Route path="/" exact>
             <Intro />
-          </Route>
+          </Route> */}
           <Redirect from="/MTracker" to="/" />
           <MangaContextProvider>
             <Route path="/Info" component={MangaForm} />
@@ -37,6 +38,7 @@ export default class Routes extends Component {
           {/* <Route path="/Contact" component={Contact} />
           <Route path="/Products" component={Products} /> */}
         </Switch>
+        {/* </HashRouter> */}
       </>
     );
   }
