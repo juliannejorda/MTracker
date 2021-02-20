@@ -37,6 +37,7 @@ function App() {
         </ApolloProvider>
       </MangaContextProvider> */}{" "}
       {/* <BrowserRouter history={history}> */}
+      <Navigation />
       <Routes />
       {/* </BrowserRouter> */}
     </div>

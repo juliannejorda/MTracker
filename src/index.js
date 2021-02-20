@@ -3,8 +3,9 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, HashRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
+import history from "./Pages/history";
 // var express = require("express");
 // var cors = require("cors");
 // var app = express();
@@ -28,9 +29,11 @@ import "bootstrap/dist/css/bootstrap.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    {/* <Router> */}
+    <Router history={history}>
       <App />
     </Router>
+    {/* </Router> */}
   </React.StrictMode>,
   document.getElementById("root")
 );

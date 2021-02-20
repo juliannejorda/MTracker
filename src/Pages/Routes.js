@@ -5,6 +5,7 @@ import {
   Route,
   HashRouter,
   BrowserRouter,
+  Redirect,
 } from "react-router-dom";
 
 // import About from "./About/About";
@@ -22,10 +23,12 @@ export default class Routes extends Component {
   render() {
     return (
       <>
-        <Navigation />
         <Switch>
-          <Route path="/" exact component={Intro} />
-
+          {/* <Route path="/" exact component={Intro} /> */}
+          <Route path="/" exact>
+            <Intro />
+          </Route>
+          <Redirect from="/MTracker" to="/" />
           <MangaContextProvider>
             <Route path="/Info" component={MangaForm} />
             <Route path="/ReadingList" component={ReadingList} />

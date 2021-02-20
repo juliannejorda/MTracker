@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Form, Button } from "react-bootstrap";
 // import Button from "react-bootstrap/Button";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 // import from "react-rout"
 
 const Navigation = (props) => {
@@ -15,6 +15,9 @@ const Navigation = (props) => {
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/Info">Info</Nav.Link>
           <Nav.Link href="/ReadingList">Reading List</Nav.Link>
+          {/* <Link to="/">Home</Link> */}
+          {/* <Nav.Link href="/Info">Info</Nav.Link>
+          <Nav.Link href="/ReadingList">Reading List</Nav.Link> */}
         </Nav>
         {/* <Button variant="primary">Primary</Button>{" "} */}
       </Navbar.Collapse>
