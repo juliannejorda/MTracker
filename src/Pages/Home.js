@@ -52,7 +52,7 @@ const NewMangaForm = () => {
     return (
       <>
         <h1>Sorry not found</h1>
-        <Button href="/Info">Return back</Button>
+        <Button href="#/Info">Return back</Button>
       </>
     );
   if (data) {
