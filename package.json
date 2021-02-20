@@ -2,7 +2,7 @@
   "name": "manhwa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://juliannejorda.github.io/MTracker/",
+  "homepage": "https://juliannejorda.github.io/MTracker",
   "dependencies": {
     "@apollo/client": "^3.3.10",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
