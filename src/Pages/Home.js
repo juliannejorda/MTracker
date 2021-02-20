@@ -33,6 +33,12 @@ import Intro from "./Intro";
 //   }
 //   document.getElementById(id).checked = true;
 // }
+// function handleEntailmentRequest(e){
+//     e.preventDefault();
+//     //do something...
+//     href=""
+
+// }
 
 const NewMangaForm = () => {
   const { dispatch } = useContext(MangaContext);
@@ -48,11 +54,16 @@ const NewMangaForm = () => {
   const [getManga, { loading, data, error }] = useLazyQuery(GET_MANGA_QUERY, {
     variables: { search: mangaSearched },
   });
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
   if (error)
     return (
       <>
         <h1>Sorry not found</h1>
-        <Button href="#/Info">Return back</Button>
+        {/* <Button href="#/Info">Return back</Button> */}
+        <Button onClick={refreshPage}>Return back</Button>
       </>
     );
   if (data) {
