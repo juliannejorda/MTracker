@@ -30,7 +30,9 @@ const GridItem = (props) => (
     </FlippingCard> */}
     <div className="theCard">
       <Card className="card">
-        <Image src={props.image} wrapped ui={false} />
+        <a rel="https://anilist.co/" target="_blank" href={props.url}>
+          <Image src={props.image} wrapped ui={false} />
+        </a>
         <Card.Content>
           <Card.Header className="title">{props.title}</Card.Header>
           <Card.Meta>
@@ -102,6 +104,7 @@ class IntroTrending extends Component {
             romaji
             english
           }
+          siteUrl
           genres
           meanScore
           coverImage {
@@ -138,6 +141,7 @@ class IntroTrending extends Component {
               image={item.coverImage.large}
               score={item.meanScore}
               genre={item.genres}
+              url={item.siteUrl}
             />
           ))}
         </div>

@@ -43,7 +43,7 @@ import Intro from "./Intro";
 const NewMangaForm = () => {
   const { dispatch } = useContext(MangaContext);
   const [title, setTitle] = useState("");
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState("Want to Read");
   const [chapter, setChapter] = useState(0);
   const [genres, setGenres] = useState([]);
   const [successfullyAdded, setSuccessfullyAdded] = useState(false);
