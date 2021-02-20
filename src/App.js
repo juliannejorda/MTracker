@@ -36,9 +36,9 @@ function App() {
           <NewMangaForm />
         </ApolloProvider>
       </MangaContextProvider> */}{" "}
-      <Router history={history}>
-        <Routes />
-      </Router>
+      {/* <BrowserRouter history={history}> */}
+      <Routes />
+      {/* </BrowserRouter> */}
     </div>
   );
 }
