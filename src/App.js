@@ -1,25 +1,71 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import NewMangaForm from "./Pages/Home";
+// import MangaContextProvider from "./contexts/MangaContext";
+// import {
+//   ApolloClient,
+//   InMemoryCache,
+//   ApolloProvider,
+//   HttpLink,
+// } from "@apollo/client";
+// import ReadingTitle from "./Pages/ReadingTitle";
+// import MangaList from "./Pages/MangaList";
+import Navigation from "./Pages/Navbar";
+import Routes from "./Pages/Routes";
 
 function App() {
+  // const client = new ApolloClient({
+  //   cache: new InMemoryCache(),
+  //   uri: "https://graphql.anilist.co",
+  // });
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <MangaContextProvider>
+        {/* main goes here */}
+      {/* <ReadingTitle />
+        <MangaList /> */}
+      {/* 
+        <ApolloProvider client={client}>
+          <NewMangaForm />
+        </ApolloProvider>
+      </MangaContextProvider> */}{" "}
+      <Navigation />
+      <Routes />
     </div>
   );
 }
 
 export default App;
+
+// import "./App.css";
+// import NewMangaForm from "./Pages/Home";
+// import MangaContextProvider from "./contexts/MangaContext";
+// import {
+//   ApolloClient,
+//   InMemoryCache,
+//   ApolloProvider,
+//   HttpLink,
+// } from "@apollo/client";
+// import ReadingTitle from "./Pages/ReadingTitle";
+// import MangaList from "./Pages/MangaList";
+
+// function App() {
+//   const client = new ApolloClient({
+//     cache: new InMemoryCache(),
+//     uri: "https://graphql.anilist.co",
+//   });
+//   return (
+//     <div className="App">
+//       <MangaContextProvider>
+//         {/* main goes here */}
+//         <ReadingTitle />
+//         <MangaList />
+
+//         <ApolloProvider client={client}>
+//           <NewMangaForm />
+//         </ApolloProvider>
+//       </MangaContextProvider>
+//     </div>
+//   );
+// }
+
+// export default App;

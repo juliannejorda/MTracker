@@ -1,0 +1,9 @@
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 5%;
+    padding: 0;
+}
+.noBooks {
+    margin-top: 10px;
+}
