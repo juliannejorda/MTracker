@@ -10,11 +10,13 @@ import history from "./history";
 import MangaForm from "./MangaForm";
 import ReadingList from "./ReadingList";
 import MangaContextProvider from "../contexts/MangaContext";
+import Navigation from "./Navbar";
 
 export default class Routes extends Component {
   render() {
     return (
       <Router history={history}>
+        <Navigation />
         <Switch>
           <Route path="/" exact component={Intro} />
 

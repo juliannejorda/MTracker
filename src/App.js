@@ -28,7 +28,6 @@ function App() {
           <NewMangaForm />
         </ApolloProvider>
       </MangaContextProvider> */}{" "}
-      <Navigation />
       <Routes />
     </div>
   );
