@@ -4,7 +4,7 @@ MTracker is a site that allows users' to search up and track any manga, manhwa o
 # Demo
 [Demo](https://juliannejorda.github.io/MTracker/#/)
 
-I will write the rest lateer im so tired and sleep deprived ...
+# Features
 
 # Technologies Used
 ReactJS, Javascript, HTML, CSS, GraphQL for Anilist API, Axios, Apollo, Local Storage (react-dom), Bootstrap
