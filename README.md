@@ -16,4 +16,4 @@ Tracks all the titles you have added to your current reading list. Users are abl
 ![MTracker Reading List](demo/MTrackerReadingList.gif)
 
 # Technologies Used
-ReactJS, Javascript, HTML, CSS, GraphQL for Anilist API, Axios, Apollo, Local Storage (react-dom), Bootstrap
+ReactJS, Javascript, HTML, CSS, GraphQL for Anilist API, Axios, Apollo, React Routers, React Context, Bootstrap
