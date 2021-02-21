@@ -4,7 +4,6 @@ MTracker is a site that allows users' to search up and track any manga, manhwa o
 # Demo
 [Demo](https://juliannejorda.github.io/MTracker/#/)
 
-# Features
 ## The Home Page
 Features the top trending manga, manhwa or manhua with the title, image, genres, and rating.
 Bonus: A separate section of trending manhwas I usually read :')
