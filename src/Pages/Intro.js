@@ -30,8 +30,11 @@ function Intro() {
         <h1 className="theMainTitle">Welcome to MTracker</h1>
         <h5 className="theMainDesc">
           MTracker is a site that allows users' to search up and track any
-          manga, manhwa or manhua information. MTracker also saves the users'
-          reading status and chapter without an account!
+          manga, manhwa or manhua information.
+        </h5>
+        <h5 className="theMainDesc">
+          MTracker also saves the users' reading status and chapter without an
+          account!
         </h5>
         <br></br>
         {/* <Button variant="btn btn-success" onClick={() => history.push("/Info")}>
@@ -45,8 +48,8 @@ function Intro() {
       {/* <ApolloProvider client={client}> */}
       <h1>Top Trending:</h1>
       <IntroTrending />
-      <h1>Julianne's Top Manhwa Trending:</h1>
-      <p>Genres: Fantasy and Romance</p>
+      <h1>Julianne's Top Trending Manhwa:</h1>
+      <h5 className="theMainDesc">Genres: Fantasy and Romance</h5>
       <IntroTJ />
       {/* </ApolloProvider> */}
     </div>

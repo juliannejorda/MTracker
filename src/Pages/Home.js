@@ -310,7 +310,7 @@ const NewMangaForm = () => {
                           />
                         </div>
                         <div className="theIconButton">
-                          <Button variant="light" className="popButton">
+                          <Button variant="info" className="popButton">
                             <FontAwesomeIcon size="lg" icon={faFlag} />
                             <div className="popTitle">
                               {data.Media.countryOfOrigin}
@@ -619,26 +619,55 @@ se interested. Sections 1.10.32 and 1.10.33 from  by Cicero are also reproduced 
                               : data.Media.recommendations.edges[i].node
                                   .mediaRecommendation.title.romaji}
                           </h4> */}
+                          <div className="recs-info">
+                            <h3 className="onlyTitleName">
+                              {console.log(
+                                data.Media.recommendations.edges[i].node
+                                  .mediaRecommendation
+                              )}
+                              {data.Media.recommendations.edges[i].node
+                                .mediaRecommendation.title.english
+                                ? data.Media.recommendations.edges[i].node
+                                    .mediaRecommendation.title.english
+                                : data.Media.recommendations.edges[i].node
+                                    .mediaRecommendation.synonyms[0]
+                                ? data.Media.recommendations.edges[i].node
+                                    .mediaRecommendation.synonyms[0]
+                                : data.Media.recommendations.edges[i].node
+                                    .mediaRecommendation.title.romaji}
+                            </h3>
+                            <StarRatings
+                              rating={
+                                (data.Media.recommendations.edges[i].node
+                                  .mediaRecommendation.averageScore /
+                                  100) *
+                                5
+                              }
+                              starRatedColor="gold"
+                              //   changeRating={this.changeRating}
+                              numberOfStars={5}
+                              name="rating"
+                              starDimension={28}
+                              starSpacing={1.5}
+                              //   starHoverColor="red"
+                            />
+                            <br></br>
 
-                          <h2 className="onlyTitleName">
-                            {data.Media.recommendations.edges[i].node
-                              .mediaRecommendation.title.english
-                              ? data.Media.recommendations.edges[i].node
-                                  .mediaRecommendation.title.english
-                              : data.Media.recommendations.edges[i].node
-                                  .mediaRecommendation.synonyms[0]
-                              ? data.Media.recommendations.edges[i].node
-                                  .mediaRecommendation.synonyms[0]
-                              : data.Media.recommendations.edges[i].node
-                                  .mediaRecommendation.title.romaji}
-                          </h2>
-                          {/* <br></br> */}
-                          {/* {
+                            {/* <h6>Genres: </h6> */}
+                            <h5 className="recsGenre">
+                              {data.Media.recommendations.edges[
+                                i
+                              ].node.mediaRecommendation.genres.join(", ")}
+                            </h5>
+
+                            {/* <br></br> */}
+                            {/* {
                             data.Media.recommendations.edges[i].node
                               .mediaRecommendation.averageScore
                           } */}
 
-                          {/* Content that will be displayed on the back of the card */}
+                            {/* Content that will be displayed on the back of the card */}
+                          </div>
                         </FlippingCardBack>
                         <FlippingCardFront>
                           <img

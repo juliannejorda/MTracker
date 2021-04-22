@@ -99,7 +99,7 @@ class IntroTJ extends Component {
     const query = `
     query {
       Page(perPage: 15) {
-        media(isAdult: false, sort: POPULARITY_DESC, type: MANGA, countryOfOrigin: KR, genre_in: ["Fantasy", "Romance"], genre_not_in: ["Psychological", "Ecchi", "Yaoi", "Yuri", "Adventure"]) {
+        media(isAdult: false, sort: TRENDING_DESC, type: MANGA, countryOfOrigin: KR, genre_in: ["Fantasy", "Romance"], genre_not_in: ["Psychological", "Ecchi", "Yaoi", "Yuri", "Adventure"]) {
           id
           title {
             romaji

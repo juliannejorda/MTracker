@@ -352,3 +352,15 @@ div.oneChar {
       margin-left: 5%;
       margin-bottom: 10px;
   }
+
+  .recsGenre {
+      margin-top: 0.5rem;
+  }
+
+  .recs-info {
+    /* margin: 0;
+    position: absolute;
+    top: 5%; */
+    /* padding: 8% 0; */
+    /* flex: auto;  */
+  }
